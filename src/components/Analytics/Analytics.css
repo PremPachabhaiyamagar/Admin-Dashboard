@@ -1,0 +1,72 @@
+.analytics
+{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.analytics header
+{
+  display: flex;
+  justify-content:space-between;
+  width:100%;
+  font-weight: bold;
+}
+.analytics header .followers
+{
+  color: var(--color-g);
+}
+.analytics header .earnings
+{
+  color: var(--color-r);
+}
+.analytics .title
+{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+.analytics .value
+{
+  color: lime;
+  font-size: 18px;
+}
+.analytics .illustration
+{
+  height: 100px;
+  margin: 10px 0 0;
+  border-radius: 5px;
+}
+.extra_text
+{
+  font-size: 15px;
+  text-align:center;
+  color: rgba(121,121,121);
+}
+@media  screen and (max-device-width:1200px) and (min-device-width:769px){
+  .analytics .title
+  {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .analytics .value
+{
+  color: lime;
+  font-size: 10px;
+}
+.extra_text
+{
+  font-size: 12px;
+  text-align:center;
+  color: rgba(121,121,121);
+}
+.analytics .illustration
+{
+  height: 70px;
+  margin: 10px 0 0;
+  border-radius: 5px;
+}
+}

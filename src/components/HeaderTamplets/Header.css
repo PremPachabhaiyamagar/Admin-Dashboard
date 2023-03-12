@@ -1,0 +1,155 @@
+header
+{
+  position: relative;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 8px;
+  --color:#0a6672;
+}
+header .search-bar
+{
+  display:flex;
+  position: relative;
+  flex: 1;
+  align-items: center;
+  width: 25%;
+}
+header .search-bar input
+{
+padding: 8px 16px;
+border-radius: 100px;
+background: transparent;
+font-size: 16px;
+}
+header .search-bar input:focus::placeholder
+{
+  color: var(--color);
+}
+header .search-bar input:focus
+{
+  border: 1px solid var(--color);
+}
+header .search-bar .icon
+{
+  position: relative;
+  right: 25px;
+  font-size: 20px;
+  color: rgba(82,82,82);
+  cursor: pointer;
+}
+header .search-bar input:focus ~ .icon
+{
+  color: var(--color);
+}
+header .tools
+{
+  position:relative ;
+  display:flex;
+  align-items:center;
+  gap: 25px;
+}
+header .tools .icon
+{
+color:rgba(82,82,82);
+font-size: 20px;
+cursor: pointer;
+}
+header .tools .icon:hover
+{
+  color:var(--color);
+}
+header .tools .seperator
+{
+  background-color: var(--color);
+  width: 1px;
+  border-radius: 100px;
+  align-self: stretch;
+}
+header .tools .profile
+{
+  position: relative;
+  height: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color);
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(255,255,255,.199);
+}
+.header .tools .profile:active
+{
+  scale: .97;
+}
+header.dark input
+{
+  color: white;
+}
+.toggleMenu
+{
+ background: rgb(255,255,255,.337);
+ position: relative;
+ top:-8px;
+ margin: 2px 5px;
+ height: 20px;
+ width: 20px;
+ align-self:flex-end;
+ cursor: grab;
+}
+@media screen and (max-device-width:480px) and (min-device-width:250px){
+  .toggleMenu
+  {
+   display: block;
+  }
+}
+
+@media screen and (max-device-width:768px){
+  header
+  {
+    display: none;
+  }
+  .toggleMenu
+  {
+    display: block;
+  }
+}
+@media screen and (max-device-width:1200px)
+{
+ header{
+  padding: 4px;
+  margin: 1%;
+ }
+ header .search-bar
+ {
+  height: 1%;
+  flex: 0;
+ }
+ header .search-bar input
+ {
+  padding: 5px 10px;
+  font-size: 12px;
+ }
+ header .search-bar input:focus ~ .icon
+{
+  color: var(--color);
+}
+header .search-bar .icon
+{
+  font-size: 12px;
+}
+header .tools
+{
+  position: relative;
+  gap: 20px;
+}
+header .tools .icon
+{
+  font-size: 15px;
+}
+}
+@media screen and (min-device-width:790px)
+{
+  .toggleMenu
+  {
+    display: none;
+  }
+}

@@ -1,0 +1,139 @@
+.navigation
+{
+  position: sticky;
+  top: 0;
+  min-height: 100vh;
+  width: 20%;
+  background: linear-gradient(10deg ,#810551,#054054);
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  color: #fff;
+  overflow: hidden;
+}
+.navigation.active
+{
+  width: max-content;
+}
+.navigation .menu
+{
+  position: absolute;
+  right: 10px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 35px;
+  aspect-ratio: 1;
+  font-size: 18px;
+  z-index: 1;
+}
+.navigation.active .menu
+{
+  position: relative;
+}
+.navigation .menu.active
+{
+ rotate: 180deg;
+}
+.navigation header
+{
+  position: relative;
+  gap: 10px;
+  padding: 25px 0 15px;
+  margin-bottom: 5px;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.377);
+}
+.navigation.active header
+{
+  padding: 0;
+  margin-top: 10px;
+  background-color: transparent;
+}
+.navigation header::after
+{
+  content: ' ';
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background-color: rgba(255,255,255,0.377);
+  bottom: 0;
+}
+.navigation.active header::after,
+.navigation.active header span
+{
+  display: none;
+}
+
+.navigation header .profile
+{
+height: 50px;
+aspect-ratio: 1;
+border-radius: 50%;
+background-color: lightgray;
+box-shadow: 0 10px 20px rgba(255,255,255,.199);
+}
+.profile-img
+{
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navigation.active header .profile
+{
+  height: 40px;
+}
+.navigation.dark header
+{
+  background-color: #111;
+}
+.divider{
+  position: relative;
+  margin: 0 auto;
+  height: 2px;
+  width: 80%;
+  background-color: rgba(255,255,255,0.377);
+  cursor: pointer;
+}
+.menu{
+  position: relative;
+}
+.navigation .bg-waves
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: .3;
+}
+.navigation.active .bg-waves
+{
+  display: none;
+}
+@media screen and (max-device-width:480px)
+{
+  .navigation
+  {
+    display: none;
+  }
+}
+@media screen and (max-device-width:768px)and (min-device-width:481px){
+  .navigation
+  {
+    display: none;
+  }
+}
+@media screen and (max-device-width:1200px)
+{
+ .navigation{
+  display: none;
+ }
+ 
+}

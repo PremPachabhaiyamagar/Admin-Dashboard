@@ -1,0 +1,25 @@
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:sans-serif;
+}
+.App
+{
+  position: relative;
+  display: flex;
+ justify-content: flex-start;
+ align-items: flex-start;
+ min-height: 100vh;
+ background-color: black;
+}
+::-webkit-scrollbar
+{
+  background-color: #111;
+  width: 3px;
+}
+::-webkit-scrollbar-thumb
+{
+  background-color: #00464e;
+}

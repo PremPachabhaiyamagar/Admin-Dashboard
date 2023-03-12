@@ -1,0 +1,41 @@
+.main
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+  background-color:#e4e4e4;
+  --dm-bg:#111;
+}
+.main.dark 
+{
+  background-color: var(--dn-bg);
+  color: #e4e4e4;
+}
+@media screen and (min-device-width:250px) and (max-device-width:480px)
+{
+  .main
+  {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px auto;
+    overflow: hidden;
+  }
+}
+@media screen and (max-device-width:768px)
+{
+  .main{
+    overflow: hidden;
+    padding: 3%;
+  }
+}
+@media screen and (max-device-width:1200px)
+{
+.main{
+  overflow: hidden;
+}
+}
